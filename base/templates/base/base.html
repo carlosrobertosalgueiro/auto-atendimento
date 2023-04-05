@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        {% include 'base/_head.html' %}
+        <title>{% block title %}{% endblock  %}</title>
+    </head>
+<body>
+        {% include 'base/_navbar.html' %}
+        <div class=" container p-5">
+        {% block content %}{% endblock  %}
+        </div>
+        {% include 'base/_footer.html' %}
+</body>
+</html>
