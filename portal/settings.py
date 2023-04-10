@@ -51,7 +51,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'corsheaders',
-    'base'
+    'base',
+    'contas'
 ]
 
 MIDDLEWARE = [
@@ -143,3 +144,4 @@ STATIC_ROOT = '/media'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+AUTH_USER_MODEL = 'contas.MyUser'
